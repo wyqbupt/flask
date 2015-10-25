@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     {% extends "base.html" %}
     {% block content %}
     <h1>Hi, {{user.nickname}}!</h1>
@@ -5,3 +6,16 @@
     <p>{{post.author.nickname}} says: <b>{{post.body}}</b></p>
     {% endfor %}
     {% endblock %}
+=======
+{% extends "base.html" %}
+{% block content %}
+<h1>Hi, {{user.nickname}}!</h1>
+    {% for post in posts %}
+<div>
+    <p>
+        {{post.author.nickname}} says: <b>{{post.body}}</b>
+    </p>
+</div>
+    {% endfor %}
+{% endblock %}
+>>>>>>> 5220773baf4aea2b663c4b3c2abe63cd8b6da05e
